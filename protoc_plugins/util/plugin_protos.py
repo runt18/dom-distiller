@@ -277,5 +277,5 @@ class ProtoEnumValue(object):
 
   def CheckSupported(self):
     if self.proto.HasField('options'):
-      return 'Enum value options are not supported: {} {}'.format(
+      return 'Enum value options are not supported: {0} {1}'.format(
           self.proto.name, self.proto.value)
